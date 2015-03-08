@@ -1,5 +1,5 @@
 # hfASDmodules
-Code used in Glerean et al. 2015 "Reorganization of functionally connected brain subnetworks in high-functioning autism" (submitted)
+Code used in **Glerean et al. 2015 *"Reorganization of functionally connected brain subnetworks in high-functioning autism"* ** (submitted)
 
 This is part of the code used for the article mentioned above. 
 
@@ -18,5 +18,17 @@ The scripts are using the extensive library developed by the Complex Networks gr
 https://git.becs.aalto.fi/complex-networks/verkko/tree/master
 http://becs.aalto.fi/en/research/complex_networks/
 
+## ABIDE dataset
+The subfolder ABIDE contains
+- 
+
+
+## Statistics
+The following scripts were used for statistics
+- bramila_ttest_np.m 
+-- Used to efficiently compute difference of the means using permutations. It uses Matlab parallel computing toolbox.
+- bramila_mantel.m
+-- Used to perform Mantel test (correlation between two distance/similarity matrices). 
+- %% add here micro-level stuff
 
 
