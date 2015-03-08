@@ -1,5 +1,5 @@
 # hfASDmodules
-Code used in ** Glerean et al. 2015 "Reorganization of functionally connected brain subnetworks in high-functioning autism" ** (submitted)
+Code used in **Glerean et al. 2015 "Reorganization of functionally connected brain subnetworks in high-functioning autism"** (submitted)
 
 This is part of the code used for the article mentioned above. 
 
