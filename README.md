@@ -7,7 +7,7 @@ This is part of the code used for the article mentioned above.
 The BraMiLa Matlab tools were used for further preprocessing and head motion quality control
 https://git.becs.aalto.fi/bml/bramila/
 specifically
-- bramila_clean_signal.m (to further clean the fMRI data as described in Power et al. 2014 http://www.sciencedirect.com/science/article/pii/S1053811913009117
+- bramila_clean_signal.m (to further clean the fMRI data as described in Power et al. 2014 http://www.sciencedirect.com/science/article/pii/S1053811913009117)
 - bramila_diagnostics.m (for quality control)
 
 ## Graph-theoretical analysis (macro-level, mesoscopic, micro-level) ##

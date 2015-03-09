@@ -1,6 +1,7 @@
 # Intersubject similarity result for ABIDE reproducibility dataset #
 
 Files in this folder:
+
 1. ABIDE_results.mat - output from abide_mantel.m
 2. Phenotypic_V1_0b.csv - Original phenotipic file from the ABIDE project
 3. abide_mantel.m - computes mantel test using scaled inclusivity values for the selected ABIDE subjects
