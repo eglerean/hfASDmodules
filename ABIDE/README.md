@@ -3,7 +3,7 @@
 Files in this folder:
 
 1. ABIDE_results.mat - output from abide_mantel.m
-2. Phenotypic_V1_0b.csv - Original phenotipic file from the ABIDE project
+2. Phenotypic_V1_0b.csv - Original phenotipic file (Composite Phenotypic File) from the ABIDE project http://fcon_1000.projects.nitrc.org/indi/abide/ 
 3. abide_mantel.m - computes mantel test using scaled inclusivity values for the selected ABIDE subjects
 4. bramila_mantel.m - the mantel test function, part of BraMiLa tools: https://git.becs.aalto.fi/bml/bramila/
 5. cbrewer - External toolbox for Cbrewer colormaps - http://www.mathworks.com/matlabcentral/fileexchange/34087-cbrewer---colorbrewer-schemes-for-matlab
