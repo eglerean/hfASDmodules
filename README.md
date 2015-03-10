@@ -13,7 +13,7 @@ specifically
 - bramila_diagnostics.m (for quality control)
 
 ## Graph-theoretical analysis (macro-level, mesoscopic, micro-level) ##
-All graph-theoretical analysis was done in Python 2.7 using custom tools available at:
+Tools for graph-theoretical analysis in Python 2.7 are available at:
 https://git.becs.aalto.fi/rmkujala/brainnets
 
 The scripts are using the extensive library developed by the Complex Networks group at the Neuroscience and Biomedical Engineering department of Aalto University
