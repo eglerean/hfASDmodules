@@ -54,12 +54,42 @@ score_columns=6:15; % 6:10 is ADI-R 11:15 is ADOS
 adi_ados=phenodata(:,score_columns)>0; % keep subjects with ADI-R and ADOS
 
 goodsites={'CALTECH','CMU','PITT','UM_1','UM_2'}; % same sites as in http://www.nature.com/neuro/journal/v18/n2/full/nn.3919.html
+MAXID=max(phenodata(:,1));
+match_db=sparse(zeros(MAXID,2));
 for s=1:length(goodsites)
     keepsites(:,s)=strcmp(sites{:},goodsites{s});
+    % for each site, match pairs of controls and patients based on
+    % minimizing age and full IQ difference
+    sitelist=find(single(keepsites(:,s)).*single(sex).*single(iq));
+    tempdata=phenodata(sitelist,[1 2 3 5]); % ID, diagnosis, age, full IQ
+    distance=squareform(pdist(zscore(tempdata(:,2:end))));
+    temp_nt=find(tempdata(:,2)==2);
+    temp_as=find(tempdata(:,2)==1);
+    temp_nt_nonavail=zeros(size(temp_nt));
+    for subj=1:length(temp_as)
+        dd=distance(temp_as(subj),temp_nt);
+        dd(find(temp_nt_nonavail))=Inf;
+        id_nt_win=find(min(dd)==dd);
+        disp(['subject ' num2str(tempdata( temp_as(subj),1:2)) ' is best matched with ' num2str(tempdata(temp_nt(id_nt_win),1:2))])
+        temp_nt_nonavail(id_nt_win)=1;
+        match_db(tempdata( temp_as(subj),1),:)=[tempdata( temp_as(subj),1) tempdata(temp_nt(id_nt_win),1)];
+    end
+    
+        
+        
 end
+
+
+
+
 
 % for compatibility with old matlab, we need to convert logical variables to single (or double)
 list=find(single(ASD).*single(sex).*single(iq).*prod(single(adi_ados),2).*sum(single(keepsites),2)); % the final rows corresponding to subjects that have good data
+sites_ids=(single(keepsites(list,:))*[1;2;3;4;5]);
+%final_sites(final_sites==0)=[];
 scores=phenodata(list,score_columns);
 score_labels={'ADI_R_SOCIAL_TOTAL_A', 'ADI_R_VERBAL_TOTAL_BV', 'ADI_RRB_TOTAL_C', 'ADI_R_ONSET_TOTAL_D', 'ADI_R_RSRCH_RELIABLE', 'ADOS_TOTAL', 'ADOS_COMM', 'ADOS_SOCIAL', 'ADOS_STEREO_BEHAV', 'ADOS_RSRCH_RELIABLE'};
-%save scores scores score_labels;
+AS_ids=phenodata(list,1);
+NT_ids=full(match_db(AS_ids,2));
+
+save scores scores score_labels AS_ids NT_ids sites_ids
