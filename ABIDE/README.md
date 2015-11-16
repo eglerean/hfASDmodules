@@ -8,7 +8,7 @@ Files in this folder:
 4. abide_mantel_v2.m - revised version of abide_mantel.m with added site location regression and further head motion checks
 5. bramila_mantel.m - the mantel test function, part of BraMiLa tools: https://git.becs.aalto.fi/bml/bramila/
 6. bramila_ttest2_np - a permutation based two sample t-test, part of BraMiLa tools: https://git.becs.aalto.fi/bml/bramila/
-7. correlation_stability_analysis_sites_regressed.m - [Assessing the stability of results from ABIDE dataset, as described by Felix D. Schönbrodt, Marco Perugini, At what sample size do correlations stabilize?, Journal of Research in Personality, Volume 47, Issue 5, October 2013, Pages 609-612, ISSN 0092-6566, http://dx.doi.org/10.1016/j.jrp.2013.05.009.] (http://www.sciencedirect.com/science/article/pii/S0092656613000858)
+7. correlation_stability_analysis_sites_regressed.m - Assessing the stability of results from ABIDE dataset, as described by [Felix D. Schönbrodt, Marco Perugini, At what sample size do correlations stabilize?, Journal of Research in Personality, Volume 47, Issue 5, October 2013, Pages 609-612, ISSN 0092-6566, http://dx.doi.org/10.1016/j.jrp.2013.05.009.] (http://www.sciencedirect.com/science/article/pii/S0092656613000858)
 8. cbrewer - External toolbox for Cbrewer colormaps - http://www.mathworks.com/matlabcentral/fileexchange/34087-cbrewer---colorbrewer-schemes-for-matlab
 9. fd_mean.mat - Mean framewise displacement for each subject
 10. fd_mean_NTAS.mat - Mean framewise displacement for each subject, included the NTs from ABIDE
