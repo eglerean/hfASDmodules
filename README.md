@@ -1,9 +1,7 @@
 # hfASDmodules #
-Code used in **Glerean et al. 2015 "Reorganization of functionally connected brain subnetworks in high-functioning autism"** (submitted)
+Code used in **Glerean et al. 2015 "Reorganization of functionally connected brain subnetworks in high-functioning autism"** (in press: http://onlinelibrary.wiley.com/doi/10.1002/hbm.23084/abstract)
 
 This is part of the code used for the article mentioned above. 
-
-DOI for the code: [![DOI](https://zenodo.org/badge/10757/eglerean/hfASDmodules.svg)](http://dx.doi.org/10.5281/zenodo.15966)
 
 ## Preprocessing and head motion quality control ##
 The BraMiLa Matlab tools were used for further preprocessing and head motion quality control
