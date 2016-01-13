@@ -1,6 +1,8 @@
 # hfASDmodules #
 Code used in **Glerean et al. 2015 "Reorganization of functionally connected brain subnetworks in high-functioning autism"** (in press: http://onlinelibrary.wiley.com/doi/10.1002/hbm.23084/abstract)
 
+DOI for the code: [![DOI](https://zenodo.org/badge/10757/eglerean/hfASDmodules.svg)](https://zenodo.org/badge/latestdoi/10757/eglerean/hfASDmodules)
+
 This is part of the code used for the article mentioned above. 
 
 ## Preprocessing and head motion quality control ##
